@@ -1,0 +1,193 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Álvaro Pérez-Arango Ramos */
+/*  Correo electrónico (uniovi): UO302100@uniovi.es */
+/*  Grupo de laboratorio: L.10            */
+/* ***************************************/
+
+/* Especificidad: 001 */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+    margin: 0;
+}
+
+/* Especificidad: 001 */
+header {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+/* Especificidad: 002 */
+header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+/* Especificidad: 003 */
+body > header + nav {
+    grid-area: migas;
+    padding: 0 1em;
+}
+
+/* Especificidad: 001 */
+main {
+    grid-area: contenido;
+    padding: 0 1em;
+    min-width: 0;
+}
+
+/* Especificidad: 001 */
+footer {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+/* Especificidad: 002 */
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Especificidad: 003 */
+section:has(picture) > h3 {
+    flex-basis: 100%;
+}
+
+/* Especificidad: 003 */
+section:has(picture) > picture {
+    order: 1;
+}
+
+/* Especificidad: 003 */
+section:has(picture) > ul {
+    order: 2;
+    list-style: none;
+}
+
+/* Especificidad: 002 */
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Especificidad: 003 */
+section:has(article + article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Especificidad: 004 */
+section:has(article + article) > h3 {
+    grid-column: 1 / -1;
+}
+
+/* Especificidad: 001 */
+form {
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* Especificidad: 002, 003 */
+form > fieldset,
+form > fieldset > fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25em;
+    min-width: 0;
+}
+
+/* Especificidad: 003 */
+form > fieldset > fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Especificidad: 003, 003 */
+form > fieldset > label,
+form > fieldset > fieldset {
+    margin-top: 0.75em;
+}
+
+/* Especificidad: 003 */
+form > fieldset > textarea {
+    max-width: 100%;
+}
+
+/* Especificidad: 003 */
+form > fieldset > button {
+    align-self: center;
+    margin-top: 1em;
+}
+
+@media (max-width: 1024px) {
+    /* Especificidad: 001 */
+    header {
+        flex-direction: column;
+    }
+
+    /* Especificidad: 002 */
+    header > nav {
+        align-self: stretch;
+        justify-content: space-evenly; /* ADVERTENCIA: redefinición de la propiedad con valor original flex-end */
+    }
+
+    /* Especificidad: 003 */
+    body > header + nav {
+        display: none;
+    }
+
+    /* Especificidad: 003 */
+    section:has(article + article) {
+        grid-template-columns: repeat(2, 1fr); /* ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Especificidad: 002 */
+    header > nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Especificidad: 003 */
+    section:has(article + article) {
+        grid-template-columns: 1fr; /* ADVERTENCIA: redefinición de la propiedad con valor original repeat(2, 1fr) */
+    }
+
+    /* Especificidad: 003, 003 */
+    section:has(video) > video,
+    section:has(video) > audio {
+        max-width: 100%;
+    }
+
+    /* Especificidad: 003 */
+    section:has(video) > video {
+        height: auto;
+    }
+}

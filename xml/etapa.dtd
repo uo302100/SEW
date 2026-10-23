@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT etapa (
+    nombre,
+    numero,
+    longitud,
+    fecha,
+    tiempo_ganador,
+    velocidad_media,
+    desnivel,
+    lugar_salida,
+    lugar_llegada,
+    tipo,
+    referencias,
+    galeria_fotos,
+    galeria_videos,
+    galeria_podcasts,
+    coordenadas_salida,
+    coordenadas_llegada,
+    hitos,
+    puntos_anonimos,
+    clasificacion_etapa,
+    clasificacion_general,
+    clasificacion_equipos
+)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidades CDATA #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tiempo_ganador (#PCDATA)>
+
+<!ELEMENT velocidad_media (#PCDATA)>
+<!ATTLIST velocidad_media unidades CDATA #REQUIRED>
+
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidades CDATA #REQUIRED>
+
+<!ELEMENT lugar_salida (#PCDATA)>
+<!ELEMENT lugar_llegada (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+
+<!ELEMENT referencias (referencia, referencia, referencia, referencia*)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT galeria_fotos (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+
+<!ELEMENT galeria_videos (video+)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT galeria_podcasts (podcast+)>
+<!ELEMENT podcast (#PCDATA)>
+
+<!ELEMENT coordenadas_salida (longitud_geo, latitud_geo, altitud_geo)>
+<!ELEMENT coordenadas_llegada (longitud_geo, latitud_geo, altitud_geo)>
+
+<!ELEMENT longitud_geo (#PCDATA)>
+<!ATTLIST longitud_geo unidades CDATA #REQUIRED>
+
+<!ELEMENT latitud_geo (#PCDATA)>
+<!ATTLIST latitud_geo unidades CDATA #REQUIRED>
+
+<!ELEMENT altitud_geo (#PCDATA)>
+<!ATTLIST altitud_geo unidades CDATA #REQUIRED>
+
+<!ELEMENT hitos (hito*)>
+<!ELEMENT hito (nombre_hito, tipo_hito, longitud_geo, latitud_geo, altitud_geo, distancia_salida)>
+<!ELEMENT nombre_hito (#PCDATA)>
+<!ELEMENT tipo_hito (#PCDATA)>
+<!-- ATRIBUTO AÑADIDO: permite indicar si el hito (puerto o sprint) es bonificable -->
+<!ATTLIST hito bonificable (si|no) "no">
+
+<!ELEMENT distancia_salida (#PCDATA)>
+<!ATTLIST distancia_salida unidades CDATA #REQUIRED>
+
+<!ELEMENT puntos_anonimos (punto_anonimo*)>
+<!ELEMENT punto_anonimo (longitud_geo, latitud_geo, altitud_geo, distancia_salida)>
+
+<!ELEMENT clasificacion_etapa (ciclista, ciclista, ciclista)>
+<!ELEMENT clasificacion_general (ciclista, ciclista, ciclista)>
+<!ELEMENT ciclista (nombre_ciclista, equipo, tiempo_diferencia?)>
+<!ATTLIST ciclista posicion CDATA #REQUIRED>
+
+<!ELEMENT nombre_ciclista (#PCDATA)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT tiempo_diferencia (#PCDATA)>
+
+<!ELEMENT clasificacion_equipos (equipo_clasificado, equipo_clasificado, equipo_clasificado)>
+<!ELEMENT equipo_clasificado (nombre_equipo, tiempo_diferencia?)>
+<!ATTLIST equipo_clasificado posicion CDATA #REQUIRED>
+
+<!ELEMENT nombre_equipo (#PCDATA)>

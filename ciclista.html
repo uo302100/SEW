@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Álvaro Pérez-Arango Ramos" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Página principal de LaVuelta2026">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Información meteorológica de la etapa">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de la carrera">Clasificaciones</a>
+            <a href="juegos.html" title="Juego de preguntas sobre la etapa">Juegos</a>
+            <a href="ayuda.html" title="Ayuda y guía del sitio web">Ayuda</a>
+        </nav>
+    </header>
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html" title="Página principal de LaVuelta2026">Inicio</a></li>
+            <li aria-hidden="true">&gt;&gt;</li>
+            <li>Ciclista</li>
+        </ol>
+    </nav>
+    <main>
+        <h2>José Manuel Díaz</h2>
+
+        <section>
+            <h3>Datos personales</h3>
+            <ul>
+                <li>José Manuel Díaz Gallego</li>
+                <li>18/01/1995</li>
+                <li>España</li>
+                <li>BURGOS-BURPELLET-BH</li>
+                <li>Dorsal: 195</li>
+            </ul>
+            <picture>
+                <source srcset="multimedia/jose_manuel_diaz_movil.png" media="(max-width: 768px)" width="150" height="227" />
+                <source srcset="multimedia/jose_manuel_diaz_tablet.png" media="(max-width: 1024px)" width="225" height="341" />
+                <img src="multimedia/jose_manuel_diaz.png" alt="Fotografía del ciclista José Manuel Díaz" width="300" height="455" />
+            </picture>  
+        </section>
+
+        <section>
+            <h3>Datos equipos</h3>
+            <ol>
+                <li>Burgos-Burpellet-BH (2022 - Actualidad)</li>
+                <li>Gazprom-RusVelo (2022)</li>
+                <li>Team Delko (2020 - 2021)</li>
+                <li>Team Vorarlberg Santic (2019)</li>
+                <li>Israel Cycling Academy (2017 - 2018)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <caption>Resultados de José Manuel Díaz en la temporada 2025</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" id="dato">Dato</th>
+                        <th scope="col" id="resultado">Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" id="victorias">Victorias</th>
+                        <td headers="resultado victorias">0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="etapas">Victorias de etapa</th>
+                        <td headers="resultado etapas">0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="podios">Podios</th>
+                        <td headers="resultado podios">2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="top10">Top 10</th>
+                        <td headers="resultado top10">7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="general">Mejor general</th>
+                        <td headers="resultado general">8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="top25">Top 25</th>
+                        <td headers="resultado top25">18</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Multimedia</h3>
+
+            <p>Equipo <a href="https://www.lavuelta.es/es/equipo/BBH/burgos-burpellet-bh" title="Página oficial del equipo Burgos-Burpellet-BH en La Vuelta">BURGOS-BURPELLET-BH</a> en la Vuelta Ciclista a España 2026.</p>
+
+            <video controls="controls" poster="multimedia/poster_equipo.png" width="640" height="360">
+                <source src="multimedia/video_equipo.webm" type="video/webm" />
+                <source src="multimedia/video_equipo.mp4" type="video/mp4" />
+                Tu navegador no soporta el elemento de vídeo.
+            </video>
+
+            <audio controls="controls">
+                <source src="multimedia/audio_equipo.mp3" type="audio/mpeg" />
+                <source src="multimedia/audio_equipo.wav" type="audio/wav" />
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>Álvaro Pérez-Arango Ramos</p>
+        <address>
+            <a href="mailto:UO302100@uniovi.es" title="Enviar un correo electrónico al autor">UO302100@uniovi.es</a>
+        </address>
+    </footer>
+</body>
+
+</html>

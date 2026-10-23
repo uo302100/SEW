@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Planimetría Etapa 16</name>
+
+    <Style id="estiloRojo">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="estiloVerde">
+      <IconStyle>
+        <color>ff00ff00</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="estiloAzul">
+      <IconStyle>
+        <color>ffff0000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="estiloAmarillo">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>0.8</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="estiloLinea">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Placemark>
+      <name>Salida: Cortegana</name>
+      <styleUrl>#estiloRojo</styleUrl>
+      <Point>
+        <coordinates>-6.819944,37.914523,612</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 1</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.788720,37.873960,593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 2</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.751100,37.865379,560</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 3</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.725722,37.902394,652</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 4</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.650094,37.903110,733</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 5</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.557594,37.895931,714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 6</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.568709,37.885223,644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 7</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.566696,37.861054,523</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 8</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.562460,37.857788,555</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 9</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.571034,37.836349,543</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 10</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.573630,37.766520,524</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 11</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.593383,37.698961,422</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 12</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.569624,37.653041,325</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 13</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.572413,37.621170,322</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 14</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.541470,37.608630,310</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 15</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.527866,37.541921,324</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 16</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.574229,37.442078,82</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 17</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.553156,37.393493,81</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Villarrasa (Sprint Intermedio)</name>
+      <styleUrl>#estiloAzul</styleUrl>
+      <Point>
+        <coordinates>-6.606410,37.388490,73</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 18</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.672010,37.365325,19</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 19</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.680730,37.324230,93</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 20</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.729260,37.303960,89</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 21</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.838510,37.275590,56</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 22</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.894710,37.234570,10</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Punto intermedio 23</name>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.830968,37.141672,36</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Llegada: La Rábida (Palos de la Frontera)</name>
+      <styleUrl>#estiloRojo</styleUrl>
+      <Point>
+        <coordinates>-6.926100,37.208100,8</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Recorrido Etapa 16</name>
+      <styleUrl>#estiloLinea</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -6.819944,37.914523,612
+          -6.788720,37.873960,593
+          -6.751100,37.865379,560
+          -6.725722,37.902394,652
+          -6.650094,37.903110,733
+          -6.557594,37.895931,714
+          -6.568709,37.885223,644
+          -6.566696,37.861054,523
+          -6.562460,37.857788,555
+          -6.571034,37.836349,543
+          -6.573630,37.766520,524
+          -6.593383,37.698961,422
+          -6.569624,37.653041,325
+          -6.572413,37.621170,322
+          -6.541470,37.608630,310
+          -6.527866,37.541921,324
+          -6.574229,37.442078,82
+          -6.553156,37.393493,81
+          -6.606410,37.388490,73
+          -6.672010,37.365325,19
+          -6.680730,37.324230,93
+          -6.729260,37.303960,89
+          -6.838510,37.275590,56
+          -6.894710,37.234570,10
+          -6.830968,37.141672,36
+          -6.926100,37.208100,8
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

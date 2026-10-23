@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapa SYSTEM "etapa.dtd">
+<etapa>
+	<nombre>Etapa 16: Cortegana - La Rábida / Palos de la Frontera</nombre>
+	<numero>16</numero>
+	<longitud unidades="km">181.1</longitud>
+	<fecha>2026-09-08</fecha>
+	<tiempo_ganador>03:56:33</tiempo_ganador>
+	<velocidad_media unidades="km/h">45.94</velocidad_media>
+	<desnivel unidades="m">2256</desnivel>
+	<lugar_salida>Cortegana</lugar_salida>
+	<lugar_llegada>La Rábida (Palos de la Frontera)</lugar_llegada>
+	<tipo>Ondulada</tipo>
+	
+	<referencias>
+		<referencia>https://www.lavuelta.es</referencia>
+		<referencia>https://www.marca.com/ciclismo/vuelta-espana.html</referencia>
+		<referencia>https://www.esciclismo.com</referencia>
+		<referencia>https://www.cortegana.es</referencia>
+		<referencia>https://www.palosfrontera.com</referencia>
+		<referencia>https://www.diphuelva.es</referencia>
+	</referencias>
+
+	<galeria_fotos>
+		<fotografia>castillo_cortegana.png</fotografia>
+		<fotografia>la_palma_del_condado.png</fotografia>
+		<fotografia>monasterio_la_rabida.png</fotografia>
+	</galeria_fotos>
+
+	<galeria_videos>
+		<video>resumen_etapa16.mp4</video>
+	</galeria_videos>
+
+	<galeria_podcasts>
+		<podcast>podcast_etapa16.mp3</podcast>
+	</galeria_podcasts>
+
+	<coordenadas_salida>
+		<longitud_geo unidades="grados">-6.819944</longitud_geo>
+		<latitud_geo unidades="grados">37.914523</latitud_geo>
+		<altitud_geo unidades="m">612</altitud_geo>
+	</coordenadas_salida>
+
+	<coordenadas_llegada>
+		<longitud_geo unidades="grados">-6.926100</longitud_geo>
+		<latitud_geo unidades="grados">37.208100</latitud_geo>
+		<altitud_geo unidades="m">8</altitud_geo>
+	</coordenadas_llegada>
+
+	<hitos>
+		<hito bonificable="si">
+			<nombre_hito>Villarrasa</nombre_hito>
+			<tipo_hito>Sprint Intermedio</tipo_hito>
+			<longitud_geo unidades="grados">-6.606410</longitud_geo>
+			<latitud_geo unidades="grados">37.388490</latitud_geo>
+			<altitud_geo unidades="m">73</altitud_geo>
+			<distancia_salida unidades="km">114.5</distancia_salida>
+		</hito>
+	</hitos>
+
+	<puntos_anonimos>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.788720</longitud_geo>
+			<latitud_geo unidades="grados">37.873960</latitud_geo>
+			<altitud_geo unidades="m">593</altitud_geo>
+			<distancia_salida unidades="km">9.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.751100</longitud_geo>
+			<latitud_geo unidades="grados">37.865379</latitud_geo>
+			<altitud_geo unidades="m">560</altitud_geo>
+			<distancia_salida unidades="km">12.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.725722</longitud_geo>
+			<latitud_geo unidades="grados">37.902394</latitud_geo>
+			<altitud_geo unidades="m">652</altitud_geo>
+			<distancia_salida unidades="km">16.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.650094</longitud_geo>
+			<latitud_geo unidades="grados">37.903110</latitud_geo>
+			<altitud_geo unidades="m">733</altitud_geo>
+			<distancia_salida unidades="km">21.9</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.557594</longitud_geo>
+			<latitud_geo unidades="grados">37.895931</latitud_geo>
+			<altitud_geo unidades="m">714</altitud_geo>
+			<distancia_salida unidades="km">31.4</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.568709</longitud_geo>
+			<latitud_geo unidades="grados">37.885223</latitud_geo>
+			<altitud_geo unidades="m">644</altitud_geo>
+			<distancia_salida unidades="km">33.6</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.566696</longitud_geo>
+			<latitud_geo unidades="grados">37.861054</latitud_geo>
+			<altitud_geo unidades="m">523</altitud_geo>
+			<distancia_salida unidades="km">37.4</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.562460</longitud_geo>
+			<latitud_geo unidades="grados">37.857788</latitud_geo>
+			<altitud_geo unidades="m">555</altitud_geo>
+			<distancia_salida unidades="km">38.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.571034</longitud_geo>
+			<latitud_geo unidades="grados">37.836349</latitud_geo>
+			<altitud_geo unidades="m">543</altitud_geo>
+			<distancia_salida unidades="km">41.7</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.573630</longitud_geo>
+			<latitud_geo unidades="grados">37.766520</latitud_geo>
+			<altitud_geo unidades="m">524</altitud_geo>
+			<distancia_salida unidades="km">52.7</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.593383</longitud_geo>
+			<latitud_geo unidades="grados">37.698961</latitud_geo>
+			<altitud_geo unidades="m">422</altitud_geo>
+			<distancia_salida unidades="km">63.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.569624</longitud_geo>
+			<latitud_geo unidades="grados">37.653041</latitud_geo>
+			<altitud_geo unidades="m">325</altitud_geo>
+			<distancia_salida unidades="km">68.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.572413</longitud_geo>
+			<latitud_geo unidades="grados">37.621170</latitud_geo>
+			<altitud_geo unidades="m">322</altitud_geo>
+			<distancia_salida unidades="km">71.2</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.541470</longitud_geo>
+			<latitud_geo unidades="grados">37.608630</latitud_geo>
+			<altitud_geo unidades="m">310</altitud_geo>
+			<distancia_salida unidades="km">74.0</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.527866</longitud_geo>
+			<latitud_geo unidades="grados">37.541921</latitud_geo>
+			<altitud_geo unidades="m">324</altitud_geo>
+			<distancia_salida unidades="km">85.1</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.574229</longitud_geo>
+			<latitud_geo unidades="grados">37.442078</latitud_geo>
+			<altitud_geo unidades="m">82</altitud_geo>
+			<distancia_salida unidades="km">102.6</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.553156</longitud_geo>
+			<latitud_geo unidades="grados">37.393493</latitud_geo>
+			<altitud_geo unidades="m">81</altitud_geo>
+			<distancia_salida unidades="km">111.0</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.672010</longitud_geo>
+			<latitud_geo unidades="grados">37.365325</latitud_geo>
+			<altitud_geo unidades="m">19</altitud_geo>
+			<distancia_salida unidades="km">120.3</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.680730</longitud_geo>
+			<latitud_geo unidades="grados">37.324230</latitud_geo>
+			<altitud_geo unidades="m">93</altitud_geo>
+			<distancia_salida unidades="km">124.5</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.729260</longitud_geo>
+			<latitud_geo unidades="grados">37.303960</latitud_geo>
+			<altitud_geo unidades="m">89</altitud_geo>
+			<distancia_salida unidades="km">136.0</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.838510</longitud_geo>
+			<latitud_geo unidades="grados">37.275590</latitud_geo>
+			<altitud_geo unidades="m">56</altitud_geo>
+			<distancia_salida unidades="km">147.2</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.894710</longitud_geo>
+			<latitud_geo unidades="grados">37.234570</latitud_geo>
+			<altitud_geo unidades="m">10</altitud_geo>
+			<distancia_salida unidades="km">155.4</distancia_salida>
+		</punto_anonimo>
+		<punto_anonimo>
+			<longitud_geo unidades="grados">-6.830968</longitud_geo>
+			<latitud_geo unidades="grados">37.141672</latitud_geo>
+			<altitud_geo unidades="m">36</altitud_geo>
+			<distancia_salida unidades="km">169.2</distancia_salida>
+		</punto_anonimo>
+	</puntos_anonimos>
+
+	<clasificacion_etapa>
+		<ciclista posicion="1">
+			<nombre_ciclista>Matthew Brennan</nombre_ciclista>
+			<equipo>Team Visma | Lease a Bike</equipo>
+		</ciclista>
+		<ciclista posicion="2">
+			<nombre_ciclista>Bryan Coquard</nombre_ciclista>
+			<equipo>Cofidis</equipo>
+			<tiempo_diferencia>00:00:00</tiempo_diferencia>
+		</ciclista>
+		<ciclista posicion="3">
+			<nombre_ciclista>Vito Braet</nombre_ciclista>
+			<equipo>Lotto Intermarché</equipo>
+			<tiempo_diferencia>00:00:00</tiempo_diferencia>
+		</ciclista>
+	</clasificacion_etapa>
+
+	<clasificacion_general>
+		<ciclista posicion="1">
+			<nombre_ciclista>Enric Mas</nombre_ciclista>
+			<equipo>Movistar Team</equipo>
+		</ciclista>
+		<ciclista posicion="2">
+			<nombre_ciclista>Felix Gall</nombre_ciclista>
+			<equipo>Decathlon CMA CGM Team</equipo>
+			<tiempo_diferencia>00:02:06</tiempo_diferencia>
+		</ciclista>
+		<ciclista posicion="3">
+			<nombre_ciclista>Primož Roglič</nombre_ciclista>
+			<equipo>Red Bull - BORA - hansgrohe</equipo>
+			<tiempo_diferencia>00:02:10</tiempo_diferencia>
+		</ciclista>
+	</clasificacion_general>
+
+	<clasificacion_equipos>
+		<equipo_clasificado posicion="1">
+			<nombre_equipo>Decathlon CMA CGM Team</nombre_equipo>
+		</equipo_clasificado>
+		<equipo_clasificado posicion="2">
+			<nombre_equipo>XDS Astana Team</nombre_equipo>
+			<tiempo_diferencia>00:57:32</tiempo_diferencia>
+		</equipo_clasificado>
+		<equipo_clasificado posicion="3">
+			<nombre_equipo>Bahrain - Victorious</nombre_equipo>
+			<tiempo_diferencia>01:11:15</tiempo_diferencia>
+		</equipo_clasificado>
+	</clasificacion_equipos>
+</etapa>

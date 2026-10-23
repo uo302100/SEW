@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.uniovi.es"
+           xmlns="http://www.uniovi.es"
+           elementFormDefault="qualified">
+
+	<!-- Elemento Raíz -->
+	<xs:element name="etapa">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+				<xs:element name="numero" type="xs:positiveInteger" />
+				<xs:element name="longitud" type="tipoMedidaFloat" />
+				<xs:element name="fecha" type="xs:date" />
+				<xs:element name="tiempo_ganador" type="xs:time" />
+				<xs:element name="velocidad_media" type="tipoMedidaFloat" />
+				<xs:element name="desnivel" type="tipoMedidaInteger" />
+				<xs:element name="lugar_salida" type="xs:string" />
+				<xs:element name="lugar_llegada" type="xs:string" />
+				<xs:element name="tipo" type="xs:string" />
+				<xs:element name="referencias" type="tipoReferencias" />
+				<xs:element name="galeria_fotos" type="tipoGaleriaFotos" />
+				<xs:element name="galeria_videos" type="tipoGaleriaVideos" />
+				<xs:element name="galeria_podcasts" type="tipoGaleriaPodcasts" />
+				<xs:element name="coordenadas_salida" type="tipoCoordenadas" />
+				<xs:element name="coordenadas_llegada" type="tipoCoordenadas" />
+				<xs:element name="hitos" type="tipoHitos" />
+				<xs:element name="puntos_anonimos" type="tipoPuntosAnonimos" />
+				<xs:element name="clasificacion_etapa" type="tipoClasificacionCiclistas" />
+				<xs:element name="clasificacion_general" type="tipoClasificacionCiclistas" />
+				<xs:element name="clasificacion_equipos" type="tipoClasificacionEquipos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Tipos complejos para medidas numéricas con atributos -->
+	<xs:complexType name="tipoMedidaFloat">
+		<xs:simpleContent>
+			<xs:extension base="xs:decimal">
+				<xs:attribute name="unidades" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="tipoMedidaInteger">
+		<xs:simpleContent>
+			<xs:extension base="xs:integer">
+				<xs:attribute name="unidades" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<!-- Referencias Web -->
+	<xs:complexType name="tipoReferencias">
+		<xs:sequence>
+			<xs:element name="referencia" type="xs:anyURI" minOccurs="3" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Galerías Multimedia -->
+	<xs:complexType name="tipoGaleriaFotos">
+		<xs:sequence>
+			<xs:element name="fotografia" type="xs:string" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoGaleriaVideos">
+		<xs:sequence>
+			<xs:element name="video" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoGaleriaPodcasts">
+		<xs:sequence>
+			<xs:element name="podcast" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Coordenadas Geográficas -->
+	<xs:complexType name="tipoCoordenadas">
+		<xs:sequence>
+			<xs:element name="longitud_geo" type="tipoMedidaFloat" />
+			<xs:element name="latitud_geo" type="tipoMedidaFloat" />
+			<xs:element name="altitud_geo" type="tipoMedidaInteger" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Hitos de Ruta (Puertos y Sprints) -->
+	<xs:complexType name="tipoHitos">
+		<xs:sequence>
+			<xs:element name="hito" type="tipoHito" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoHito">
+		<xs:sequence>
+			<xs:element name="nombre_hito" type="xs:string" />
+			<xs:element name="tipo_hito" type="xs:string" />
+			<xs:element name="longitud_geo" type="tipoMedidaFloat" />
+			<xs:element name="latitud_geo" type="tipoMedidaFloat" />
+			<xs:element name="altitud_geo" type="tipoMedidaInteger" />
+			<xs:element name="distancia_salida" type="tipoMedidaFloat" />
+		</xs:sequence>
+		<xs:attribute name="bonificable" use="optional" default="no">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="si" />
+					<xs:enumeration value="no" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<!-- Puntos Anónimos del Trazado -->
+	<xs:complexType name="tipoPuntosAnonimos">
+		<xs:sequence>
+			<xs:element name="punto_anonimo" type="tipoPuntoAnonimo" minOccurs="0" maxOccurs="30" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoPuntoAnonimo">
+		<xs:sequence>
+			<xs:element name="longitud_geo" type="tipoMedidaFloat" />
+			<xs:element name="latitud_geo" type="tipoMedidaFloat" />
+			<xs:element name="altitud_geo" type="tipoMedidaInteger" />
+			<xs:element name="distancia_salida" type="tipoMedidaFloat" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Clasificaciones (Ciclistas y Equipos) -->
+	<xs:complexType name="tipoClasificacionCiclistas">
+		<xs:sequence>
+			<xs:element name="ciclista" type="tipoCiclista" minOccurs="3" maxOccurs="3" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoCiclista">
+		<xs:sequence>
+			<xs:element name="nombre_ciclista" type="xs:string" />
+			<xs:element name="equipo" type="xs:string" />
+			<xs:element name="tiempo_diferencia" type="xs:time" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute name="posicion" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:positiveInteger">
+					<xs:minInclusive value="1" />
+					<xs:maxInclusive value="3" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="tipoClasificacionEquipos">
+		<xs:sequence>
+			<xs:element name="equipo_clasificado" type="tipoEquipoClasificado" minOccurs="3" maxOccurs="3" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoEquipoClasificado">
+		<xs:sequence>
+			<xs:element name="nombre_equipo" type="xs:string" />
+			<xs:element name="tiempo_diferencia" type="xs:time" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute name="posicion" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:positiveInteger">
+					<xs:minInclusive value="1" />
+					<xs:maxInclusive value="3" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+</xs:schema>

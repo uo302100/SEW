@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+    <meta name="author" content="Álvaro Pérez-Arango Ramos" />
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026"/>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Página principal de LaVuelta2026">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Información meteorológica de la etapa">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de la carrera">Clasificaciones</a>
+            <a href="juegos.html" title="Juego de preguntas sobre la etapa" aria-current="page">Juegos</a>
+            <a href="ayuda.html" title="Ayuda y guía del sitio web">Ayuda</a>
+        </nav>
+    </header>
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html" title="Página principal de LaVuelta2026">Inicio</a></li>
+            <li aria-hidden="true">&gt;&gt;</li>
+            <li>Juegos</li>
+        </ol>
+    </nav>
+    <main>
+        <h2>Juegos</h2>
+
+        <h3>¿Conoces la etapa?</h3>
+        <p>A continuación se presenta un juego de 10 preguntas para poner a prueba tus conocimientos sobre la etapa asignada en las sesiones de Tecnologías XML. Responde a cada una de las cuestiones y pulsa el botón de envío al finalizar.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Etapa 16: Cortegana - La Rábida / Palos de la Frontera</legend>
+
+                <label for="num_etapa">1. ¿Qué número de etapa es la recorrida en este documento?:</label>
+                <input type="number" id="num_etapa" min="1" max="21" required="required" />
+
+                <label for="fecha_etapa">2. Indique la fecha de celebración de la etapa:</label>
+                <input type="date" id="fecha_etapa" min="2026-08-22" max="2026-09-13" required="required" />
+
+                <label for="lugar_salida">3. Seleccione el lugar de salida de la etapa:</label>
+                <select id="lugar_salida" required="required">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Monaco">Mónaco</option>
+                    <option value="Gruissan">Gruissan</option>
+                    <option value="Andorra">Andorra la Vella</option>
+                    <option value="Cortegana">Cortegana</option>
+                    <option value="Jaen">Jaén</option>
+                    <option value="Palma del Rio">Palma del Río</option>
+                </select>
+
+                <label for="lugar_llegada">4. Seleccione el lugar de llegada de la etapa:</label>
+                <select id="lugar_llegada" required="required">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Manosque">Manosque</option>
+                    <option value="Font Romeu">Font Romeu</option>
+                    <option value="La Rabida">La Rábida (Palos de la Frontera)</option>
+                    <option value="Cordoba">Córdoba</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Granada">Granada</option>
+                </select>
+
+                <fieldset>
+                    <legend>5. Seleccione el tipo de etapa correspondiente:</legend>
+                    <label for="tipo_llana"><input type="radio" id="tipo_llana" name="tipo_etapa" value="Llana" required="required" /> Llana</label>
+                    <label for="tipo_media"><input type="radio" id="tipo_media" name="tipo_etapa" value="Media montana" /> Media montaña</label>
+                    <label for="tipo_montana"><input type="radio" id="tipo_montana" name="tipo_etapa" value="Montana" /> Montaña</label>
+                    <label for="tipo_cri"><input type="radio" id="tipo_cri" name="tipo_etapa" value="Contrarreloj individual" /> Contrarreloj individual</label>
+                    <label for="tipo_cre"><input type="radio" id="tipo_cre" name="tipo_etapa" value="Contrarreloj por equipos" /> Contrarreloj por equipos</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Indique los hitos presentes en la etapa (puede marcar varios):</legend>
+                    <label for="hito_puerto"><input type="checkbox" id="hito_puerto" name="hitos" value="Puerto de montana" /> Puerto de montaña</label>
+                    <label for="hito_especial"><input type="checkbox" id="hito_especial" name="hitos" value="Puerto categoria especial" /> Puerto categoría especial</label>
+                    <label for="hito_sprint"><input type="checkbox" id="hito_sprint" name="hitos" value="Sprint intermedio" /> Sprint intermedio</label>
+                    <label for="hito_bonificado"><input type="checkbox" id="hito_bonificado" name="hitos" value="Sprint bonificado" /> Sprint bonificado</label>
+                    <label for="hito_sin"><input type="checkbox" id="hito_sin" name="hitos" value="Sin hitos" checked="checked" /> Sin hitos</label>
+                </fieldset>
+
+                <label for="dureza_etapa">7. Valore la dureza de la etapa (del 1 al 10):</label>
+                <input type="range" id="dureza_etapa" min="1" max="10" value="5" />
+
+                <label for="longitud_etapa">8. Introduzca la longitud de la etapa expresada en kilómetros:</label>
+                <input type="number" id="longitud_etapa" min="1" max="300" step="0.1" required="required" />
+
+                <label for="desnivel_etapa">9. Introduzca el desnivel acumulado de la etapa en metros:</label>
+                <input type="number" id="desnivel_etapa" min="0" max="6000" required="required" />
+
+                <label for="descripcion_etapa">10. Describa brevemente las características principales de la etapa:</label>
+                <textarea id="descripcion_etapa" rows="4" cols="50" required="required"></textarea>
+
+                <label for="nombre_participante">Nombre y apellidos del participante:</label>
+                <input type="text" id="nombre_participante" required="required" />
+
+                <button type="submit">Enviar respuestas</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Álvaro Pérez-Arango Ramos</p>
+        <address>
+            <a href="mailto:UO302100@uniovi.es" title="Enviar un correo electrónico al autor">UO302100@uniovi.es</a>
+        </address>
+    </footer>
+</body>
+
+</html>
